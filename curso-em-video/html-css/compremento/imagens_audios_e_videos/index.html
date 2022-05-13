@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas, áudios e vídeos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Imagens dinâmicas, áudio e vídeo</h1>
+    <br>
+    <h2>Imagens Flexíveis</h2>
+        <p>Nosso primeiro passo no caminho de adaptar nosso conteúdo ao tamanho da tela <br> vai ser aprender a gerar imagens de tamanho diferentes e a fazer o navegador carregar <br> a imagem certa para cada situação. Para isso,
+        devemos conhecer as tags &lt;picture&gt; e &lt;source&gt;. 
+        </p>
+
+        <p>Para esse exemplo, criamos as três imagens: a menor tem 300x300px, a média tem 700x700px <br> e a maior tem 1000x1000px.
+        Usamos o programa GIMP, que é um editor de imagens 100%
+        gratuito. <br> Essas imagens serão carregadas pelo navegador de acordo com o tamanho da janela atual. <br> </p>
+    <br>
+
+    <blockquote><picture>
+        <source media="(max-width: 750px)" srcset="paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="paisagem-m.png" type="image/png">       
+        <img src="paisagem-g.png" alt="A imagem flexivél funciona">
+    </picture></blockquote>
+
+     <br>
+     <p> Para isso, criamos o seguinte código base:</p>
+    
+     <blockquote><img src="codigo.PNG" alt="Imagem do código"> </blockquote>
+
+     <h2>Vamos falar sobre áudio</h2>
+
+     <p>Com a HTML5, veio também a facilidade em compartilhar áudio nos nossos sites e <br> sem depender necessariamente de JavaScript ou plugins extras. <br> A partir de agora, basta uma tag <strong>&lt;audio&gt;</strong> e alguns <strong>&lt;source&gt;</strong> <br> para fazer seu site ser capaz de tocar qualquer áudio. </p>
+
+     <h3>Reproduzindo áudio</h3>
+
+        <blockquote><audio preload="metadata" controls autoplay loop >
+            <source src="guanacast-33.mp3" type="audio/mpeg">
+            <p>Seu navegador não suporta o áudio <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg"></a> </p>
+        </audio></blockquote>
+
+     <p>Vamos aprender a reproduzir áudios em HTML5. <br>
+        Veja o trecho do código abaixo</p>
+
+     <blockquote><img src="codigo_audio.PNG" alt="Código para reproduzir aúdio"></blockquote>
+
+     <p>Vamos analisar os principais atributos da tag <strong>&lt;audio&gt;</strong> antes de mais nada: </p>
+ 
+     <ul> 
+         <li type="square">O atributo <strong>preload</strong> indica se o áudio será pré-carregado ou não e aceita três valores:</li>
+            <ul type="circle">
+                <li><strong>metadata</strong> vai carregar apenas as informações sobre o arquivo (tamanho, tempo, <br> informações de direitos, etc)</li>
+
+                <li><strong>none</strong> não vai carregar        absolutamente nada até que o usuário clique no botão  play <br> ou um script inicie a reprodução๏ </li>
+
+                <li><strong>auto</strong> (padrão) vai carregar o arquivo de áudio inteiro  assim que a página for
+                carregada, <br> mesmo que o usuário nunca aperte o play</li>
+            </ul>
+        <li type="square">  O atributo <strong>controls</strong> vai apresentar o player na tela.
+        Caso não seja colocado na tag <strong>&lt;audio&gt;</strong> <br> o controle será transparente e o usuário não poderá interagir com ele.</li>
+
+        <li type="square"> O atributo <strong>loop</strong> vai fazer com que o áudio seja repetido eternamente <br> assim que terminar a sua reprodução.</li>
+
+        <li type="square"> O atributo <strong>autoplay&gt;</strong>, quando inserido, vai iniciar a reprodução do áudio assim que <br> a página for carregada. 
+        </li>
+     </ul>
+       
+     <p>Dentro da tag <strong>&lt;audio&gt;</strong>, adicionamos vários <strong>&lt;source&gt;</strong> com formatos diferentes do
+     mesmo áudio. <br> Coloque na parte de cima o seu formato favorito. Os demais só serão carregados caso o de cima falhe. <br> Caso todos falhem, criamos um parágrafo que permite o download do arquivo MP3 <br> para ouvir no player padrão do dispositivo.</p>
+     <br>
+    
+    <h2>E os vídeos ?</h2>
+    <h3>Reproduzir vídeo HTML5</h3>
+
+    <blockquote><video width="600px" poster="limoes-capa.png" controls autoplay >
+        <source src="video-exemplo.mp4" type="video/mp4">
+    </video></blockquote>
+
+    <p>Para inserir um vídeo em nosso site, podemos utilizar a nova
+    tag &lt;video&gt; da HTML5, <br> caso o arquivo esteja hospedado no nosso próprio servidor. </p>
+
+    <p>Antes de mais nada, vamos criar a tag &lt;video&gt; e configurar <br> alguns atributos importantes: </p>
+
+    <ul type="squaqre">
+        <li> width vai indicar a largura que o vídeo vai ter na tela. Nesse exemplo, 600px. </li> <br>
+
+        <li>poster configura uma imagem que vai aparecer como uma capa, <br> enquanto o visitante não aperta o play para reproduzir o vídeo </li> <br>
+
+        <li>controls vai configurar se os controles do vídeo vão aparecer na parte <br> inferior da mídia. Por padrão, os controles não aparecerão, mas basta colocar a palavra <br> controls na tag &lt;video&gt;.</li> <br>
+
+        <li>autoplay diz para o navegador se o vídeo vai começar a tocar automaticamente, <br> assim que a página for carregada. </li>
+    </ul>
+
+    <h3>Formatos</h3>
+
+    <p>Arquivos de vídeo não são tão simples quanto imagens e <br>
+    áudios, onde o formato indica o padrão para abrir e
+    reproduzir a mídia. <br>Vídeos possuem formatos e codecs e
+    isso pode tornar o vídeo inviável de ser reproduzido <br> pela maioria dos navegadores na maioria dos dispositivos. <br>É preciso prestar muita atenção nesse pequeno detalhe </p>
+
+    <p>Os formatos suportados são MPEG, WEBM e OGV, mas os
+    dois primeiros <br> são os que possuem maior compatibilidade
+    com os navegadores atualmente.</p>
+    <br>
+    <blockquote><img src="formatos_video_navegadores.png" alt="Formatos de vídeos"></blockquote>
+   
+</body>
+</html>

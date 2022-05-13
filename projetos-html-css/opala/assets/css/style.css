@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+
+header {
+    background-image: url("../imagens/opala-ss-amarelo-top.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-width: 150px;
+    padding-top: 40px;
+    background-size: cover;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant: small-caps;
+    font-size: 3em;
+    padding: 50px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.566);
+}
+header > p {
+    padding-bottom: 30px;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 0px rgb(15, 0, 0);
+}
+header a, footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover footer a:hover {
+    text-decoration: underline;
+}
+section {
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+section > p {
+    padding-bottom: 1em;
+}
+section > h1 {
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant: small-caps;
+    color: rgb(1, 10, 1);
+    text-shadow: 1px 1px 0px rgb(255, 242, 0, 0.685);
+}
+
+div.video {
+    background-color: black;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+div.video iframe {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}  
+
+section.normal {
+    background-color: white;
+    color: black;
+    padding: 7vh;
+    min-width: 150px;
+    padding-top: 40px;
+}
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.463);
+    background-attachment: fixed;
+    color: white;
+    box-shadow: inset 6px 6px 14px 0px black;
+    box-shadow: inset 4px 4px 14px 0px black;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+   
+    background-size: cover;
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.465);
+    display: inline-block;
+    padding: 2.5vh;
+    text-shadow: 1px 1px 0px black;
+}
+section#img01 {
+    background-image: url("../imagens/opala-comodoro-classico-azul.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    font-variant: small-caps;
+}
+section#img02 {
+    background-image: url("../imagens/opala-ss-marrom.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right right;
+    font-variant: small-caps;
+}
+section#img03 {
+    background-image: url("../imagens/opala-ss-amarelo-top2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    font-variant: small-caps;
+}
+section#img04 {
+    background-image: url("../imagens/comodoro-1979jpg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right ;
+    font-variant: small-caps;
+}
+
+section#img05 {
+    background-image: url("../imagens/opala-tunado-verde.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    font-variant: small-caps;
+}
+
+section#img06 {
+    background-image: url("../imagens/opala-tunado-vermelho-top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  right ;
+    font-variant: small-caps;
+}
+
+section#img07 {
+    background-image: url("../imagens/opala-ss-preto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    font-variant: small-caps;
+}
+
+section#img08 {
+    background-image: url("../imagens/Opala-Diplomata-preto-1992-webp.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    font-variant: small-caps;
+}
+
+section#img09 {
+    background-image: url("../imagens/diplomata-laranja.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    font-variant: small-caps;
+}
+
+section#img10 {
+    background-image: url("../imagens/opala-diplomata-bordo-top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center right;
+    font-variant: small-caps;
+}
+
+section#img11 {
+    background-image: url("../imagens/opala-diplomata-tunado-verdeJPG.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    font-variant: small-caps;
+}
+
+section#img12 {
+    background-image: url("../imagens/opala-diplomata-cinza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    font-variant: small-caps;
+}
+
+section#img13 {
+    background-image: url("../imagens/opala-\ tunado-preto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    font-variant: small-caps;
+}
+
+section#img14 {
+    background-image: url("../imagens/opala-\ tunado-vermelho-top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    font-variant: small-caps;
+}
+
+section#img15 {
+    background-image: url("../imagens/opala-\ tunado-vermelho-top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    font-variant: small-caps;
+}
+footer {
+    background-color: rgba(105, 105, 105, 0.353);
+    color: black;
+    padding: 10px;
+    text-align: center;
+
+}

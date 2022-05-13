@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; background-color: rgb(245, 244, 212); font-size: 15pt; color: rgb(128, 16, 16);
+}
+h1 {
+    text-decoration: underline; font: Arial; background-color: rgb(216, 169, 38) ;
+    font-size: 30pt; color: rgb(112, 6, 6) ;
+}
+h2 {
+    font: Arial; font-size: 22pt; color: rgb(128, 16, 16);
+}

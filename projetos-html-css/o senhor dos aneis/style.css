@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'ringbearer';
+    src: url('RINGM__.TTF');
+    font-weight: normal;
+} 
+:root {
+    --fonte1:'RINGM__.TTF';
+    --fonte2: 'ringm__.ttf';
+}
+
+* {
+    margin: 0px;
+ }
+
+body {
+    background-image: linear-gradient(to bottom, rgb(170, 172, 125), rgba(8, 7, 7, 0));
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    background-image: linear-gradient(to bottom,
+     rgb(0, 0, 0), rgba(78, 90, 122, 0.425));
+    color:rgb(31, 0, 0);
+    min-width: 150px;
+    text-align: center;
+    padding-top: 60px;
+}
+header > h1 {
+    color: rgba(202, 139, 3, 0.979);
+    font-size: var(--fonte1);
+    margin-bottom: 10px;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 5px 5px 0px rgba(14, 8, 0, 0.671) ;
+    
+}
+header > p {
+    color: rgb(137, 141, 151);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    max-width: 500px;
+    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 0px rgba(38, 52, 99, 0.562);
+    margin: auto;
+    padding-bottom: 40px;
+    
+}
+main {
+    background-color: rgb(13, 14, 14);
+    font-weight: bold;
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(43, 40, 40, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h1 {
+    color:whitesmoke;
+    font-family: 'Arial Narrow';
+    font: size 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(15, 15, 15, 0.993);
+}
+main h2 {
+    color: blue;
+    font-size: 1.1em;
+    font-family:  var(--fonte1);
+}
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.8em;
+    font-size: 1.1em;
+    color: white;
+}
+main img {
+    width: 100%;
+}
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}

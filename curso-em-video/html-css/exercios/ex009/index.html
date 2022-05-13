@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        mark {
+            background-color: limegreen;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <br>
+    <p> Onde a ordem dos itens é muito importamte. Um passo a passo <br> para fazer um bolo, tabela de classificação de uma competição...</p>
+
+    <ol>
+        <strong><li>Acordar</li>
+            <li>Escovar os dentes</li>
+            <li>Tomar café</li>
+            <li>Ir trabalhar</li></strong>
+    </ol>
+
+    <p>A tag <strong>&lt;ol&gt;</strong> possui um parâmetro type, onde configuramos o tipo de marcador da lista
+        atual. <br> As opções de valores para esse parâmetro são: <br> 
+        </p>
+        <p> <strong>‣ 1 - Valor padrão. Cria listas numeradas. Ex: 1, 2, 3, 4, … <br>
+            ‣ A - Cria listas alfabéticas em maiúsculas. Ex: A, B, C, D, … <br>
+            ‣ a - Cria listas alfabéticas em minúsculas. Ex: a, b, c, d, … <br>
+            ‣ I - Cria listas com algarismos romanos em maiúsculas. Ex: I, II, III, IV, … <br>
+            ‣ i - Cria listas com algarismos romanos em minúsculas. Ex: i, ii, iii, iv, … </strong><br>
+         </p>
+        <p>Você também pode indicar o início da contagem usando o parâmetro start. <br>
+            Por exemplo, a tag <strong>&lt;ol type=“I” start = “5”&gt;</strong> vai gerar itens numerados <br> como V,
+            VI, VII, VIII, IX, … 
+        </p>
+
+        <h2>Listas não Ordenadas</h2>
+
+        <p><strong>São aquelas onde a ordem dos itens não faz diferença. Ela é apenas uma <br> maneira para organizar itens que não apresentam uma classificação necessariamente. <br>Uma lista de compras.</strong></p>
+        <br>
+
+        <ul>
+            <strong><li>Arroz</li>
+                <li>Feijão</li>
+                <li>Carne</li> 
+                <li>Leite</li>
+                <li>Crene dental</li>
+                <li>Bolacha</li></strong>
+        </ul>    
+        <br>
+        <p>O marcador padrão é a bolinha preta totalmente preenchida mas existe a opção <br> de configurar a propriedade type da tag <strong>&lt;ul&gt;</strong> com os seguintes valores: <br> <br>
+            ‣ disc - padrão. Uma bola preta totalmente pintada <br>
+            ‣ <strong>circle</strong> - Uma bola com uma borda preta e sem preenchimento <br>
+            ‣ <strong>square </strong> - Um pequeno quadrado preto totalmente pintado</p>
+        <br>
+        <h2>Listas dentro de outras listas</h2>
+
+        <p>Podemos também criar listas mistas, configurando listas dentro de outras listas. Veja
+        o exemplo a seguir:</p>
+        <br>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+                <ol type="a"> 
+                    <li>Item 2.1</li>
+                    <li>Item 2.2</li>
+                    <li>Item 2.3</li>
+                </ol>
+            <li>Intem 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ol>
+        <h2>Lista de Definições</h2>
+        <br>
+            <dl>
+                <dt><strong>HTML</strong></dt>
+                    <dd>Linguagem de marcação usada para criar conteúdo de sites.</dd>
+                <dt><strong>CSS</strong></dt>
+                    <dd>Linguagem de marcação para expecificação d estilos em sites.</dd>
+                <dt><strong>JavaScript</strong></dt>
+                    <dd>Linguagem de programação par criar interatividades em sites.</dd>
+            </dl>
+
+        <p>É como se fosse um dicionário, temos os termos e as suas descrições. <br> É uma lista sem demarcadores, mas bem útil em alguns casos.</p>
+        <br>
+        <p>Toda lista de definições está dentro de uma tag <strong>&lt;dl&gt;</strong> <strong>&lt;/dl&gt;</strong> <br> (definition list) Cada termo é um <strong>&lt;dt&gt;</strong> (definition term) e cada descrição <br> é um <strong>&lt;dd&gt;</strong> (definition description).
+        Assim como os itens da lista, <br> essas duas últimas tags possuem fechamento opcional,
+        segundo a referência oficial da HTML5. 
+         </p>
+         
+</body>
+</html>
